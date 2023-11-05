@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./CSS/index.css" />
 
     <title>Document</title>
@@ -42,10 +52,157 @@
           ></div>
         </div>
         <div class="content bg-slate-50">
-          <p></p>
+          <a href="">
+            <div class="border h-24 ps-8 bg-zinc-300 flex items-center">
+              <div class="flex items-center gap-4 font-thin">
+                <div class="text-5xl text-gray-400">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="text-gray-400 text-xl"><h1>ROAST&REVELAY</h1></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--  -->
+        <div>
+          <div class="swiper mySwiper md:block hidden bg-slate-50">
+            <div class="swiper-wrapper">
+              <!-- Slider -->
+              <div class="swiper-slide flex justify-between items-center px-8">
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/1.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    VIENNA ROAST
+                  </h1>
+                </div>
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/2.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    ETHIOPIA YIRGACHEFFE
+                  </h1>
+                </div>
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/3.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    SUMATRA DECAF
+                  </h1>
+                </div>
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/4.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    FRENCH ROAST
+                  </h1>
+                </div>
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/5.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    SUMATRA MANDHELING
+                  </h1>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-between items-center px-8">
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/6.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    <h1 class="text-center text-blue-500 font-normal text-sm">
+                      BRAZIL
+                    </h1>
+                  </h1>
+                </div>
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/7.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    COSTA RICA TARRAZU
+                  </h1>
+                </div>
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/8.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    GUATEMALA ANTIGUA
+                  </h1>
+                </div>
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/9.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    BRAZIL YELLOW BOURBON
+                  </h1>
+                </div>
+                <div class="p-1">
+                  <img
+                    class="w-[300px] h-[450px] object-fill"
+                    src="/assets/10.jpg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-center text-blue-500 font-normal text-sm pt-5"
+                  >
+                    HILL TRACT BLEND
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <!-- Navigation Button -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </section>
     </main>
-    <!-- <script src="JS/index.js"></script> -->
+    <script src="JS/index.js"></script>
   </body>
 </html>

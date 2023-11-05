@@ -1,10 +1,11 @@
-const slides = document.querySelectorAll(".slide");
-let currentSlide = 0;
+const swiper = new Swiper(".mySwiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
 
-function nextSlide() {
-  slides[currentSlide].style.opacity = 0;
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].style.opacity = 1;
-}
-
-setInterval(nextSlide, 5000);
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
