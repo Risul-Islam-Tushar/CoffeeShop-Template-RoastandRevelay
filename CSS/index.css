@@ -18,5 +18,14 @@
 
 .content {
   padding: 20px;
-  margin-top: 650px; /* Adjust this margin to prevent content overlapping with the header */
+  margin-top: 650px;
+}
+
+.content-2 {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.text-content {
+  margin-top: 250px;
 }

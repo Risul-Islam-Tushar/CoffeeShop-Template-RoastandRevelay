@@ -5,26 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./CSS/index.css" />
-
     <title>Document</title>
+    <link rel="stylesheet" href="/CSS/index.css" />
   </head>
   <body>
     <header>
-      <div class="flex justify-between items-center bg-slate-50 px-32">
+      <div class="flex justify-between items-center bg-slate-50 px-48">
         <div class="flex gap-1 items-center">
           <a href="/"
-            ><img class="h-24 w-auto" src="./assets/LOGO (2).png" alt=""
+            ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
           /></a>
           <a href="/"
             ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
@@ -42,163 +31,151 @@
         </div>
       </div>
     </header>
-
     <main>
       <section>
         <div class="banner">
           <div
             class="image"
-            style="background-image: url('./assets/Banner.jpg')"
+            style="background-image: url('../assets/coffee-cover.jpg')"
           ></div>
         </div>
-        <div class="content bg-slate-50">
-          <a href="">
-            <div class="border h-24 ps-8 bg-zinc-300 flex items-center">
-              <div class="flex items-center gap-4 font-thin">
-                <div class="text-5xl text-gray-400">
-                  <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="text-gray-400 text-xl"><h1>ROAST&REVELAY</h1></div>
-              </div>
-            </div>
-          </a>
+      </section>
+      <section>
+        <div
+          class="text-content text-white font-normal md:ps-72 pb-10 text-8xl"
+        >
+          OUR COFFEES
         </div>
-
-        <!--  -->
-        <div>
-          <div class="swiper mySwiper md:block bg-slate-50 pb-16">
-            <div class="swiper-wrapper">
-              <!-- Slider -->
-              <div class="swiper-slide flex justify-between items-center px-8">
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/1.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    VIENNA ROAST
-                  </h1>
-                </div>
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/2.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    ETHIOPIA YIRGACHEFFE
-                  </h1>
-                </div>
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/3.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    SUMATRA DECAF
-                  </h1>
-                </div>
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/4.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    FRENCH ROAST
-                  </h1>
-                </div>
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/5.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    SUMATRA MANDHELING
-                  </h1>
-                </div>
+        <div class="content-2 bg-slate-50">
+          <div class="max-w-5xl mx-auto">
+            <h1 class="pt-10 text-xl">
+              North End Coffees brings you the highest quality 100% arabica
+              coffees from around the world, roasted locally for maximum
+              freshness.
+            </h1>
+            <!-- WORLD REGION section -->
+            <div>
+              <div>
+                <h1
+                  class="pt-5 pb-3 text-3xl font-semibold border-b-2 border-black"
+                >
+                  WORLD REGION: CENTRAL/SOUTH AMERICA
+                </h1>
               </div>
-              <div class="swiper-slide flex justify-between items-center px-8">
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/6.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    <h1 class="text-center text-blue-500 font-normal text-sm">
-                      BRAZIL
-                    </h1>
+              <div class="grid grid-cols-4 gap-2 pt-5">
+                <div class="border">
+                  <img src="../assets/3.jpg" alt="" />
+                  <h1 class="text-center py-2 text-blue-600 italic">
+                    <a href="">BRAZIL</a>
                   </h1>
                 </div>
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/7.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    COSTA RICA TARRAZU
+                <div class="border">
+                  <img src="../assets/1.jpg" alt="" />
+                  <h1 class="text-center py-2 text-blue-600 italic">
+                    <a href="">COSTA RICA TARRAZU</a>
                   </h1>
                 </div>
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/8.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    GUATEMALA ANTIGUA
+                <div class="border">
+                  <img src="../assets/6.jpg" alt="" />
+                  <h1 class="text-center py-2 uppercase text-blue-600 italic">
+                    <a href="">Ethiopia</a>
                   </h1>
                 </div>
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/9.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    BRAZIL YELLOW BOURBON
+                <div class="border">
+                  <img src="../assets/9.jpg" alt="" />
+                  <h1 class="text-center py-2 uppercase text-blue-600 italic">
+                    <a href="">Sumatra</a>
                   </h1>
                 </div>
-                <div class="p-1">
-                  <img
-                    class="w-[300px] h-[450px] object-fill"
-                    src="/assets/10.jpg"
-                    alt=""
-                  />
-                  <h1
-                    class="text-center text-blue-500 font-normal text-sm pt-5"
-                  >
-                    HILL TRACT BLEND
+                <div class="border">
+                  <img src="../assets/7.jpg" alt="" />
+                  <h1 class="text-center py-2 uppercase text-blue-600 italic">
+                    <a href="">Sumatra</a>
                   </h1>
                 </div>
               </div>
             </div>
-            <!-- Navigation Button -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- ASIA-PACIFIC section -->
+            <div>
+              <div>
+                <h1
+                  class="pt-10 pb-3 text-3xl font-semibold border-b-2 border-black"
+                >
+                  WORLD REGION: ASIA-PACIFIC
+                </h1>
+              </div>
+              <div class="grid grid-cols-4 gap-2 pt-5">
+                <div class="border">
+                  <img src="../assets/4.jpg" alt="" />
+                  <h1 class="text-center py-2 text-blue-600 italic">
+                    <a href="">HILL TRACT BLEND</a>
+                  </h1>
+                </div>
+                <div class="border">
+                  <img src="../assets/7.jpg" alt="" />
+                  <h1 class="text-center py-2 text-blue-600 italic">
+                    <a href="">SUMATRA DECAF</a>
+                  </h1>
+                </div>
+                <div class="border">
+                  <img src="../assets/9.jpg" alt="" />
+                  <h1 class="text-center py-2 uppercase text-blue-600 italic">
+                    <a href="">SUMATRA MANDHELING</a>
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <!-- Africa Region -->
+            <div>
+              <div>
+                <h1
+                  class="pt-10 pb-3 text-3xl font-semibold border-b-2 border-black"
+                >
+                  WORLD REGION: AFRICA
+                </h1>
+              </div>
+              <div class="grid grid-cols-4 gap-2 pt-5">
+                <div class="border">
+                  <img src="../assets/6.jpg" alt="" />
+                  <h1 class="text-center py-2 text-blue-600 italic">
+                    <a href="">ETHIOPIA YIRGACHEFFE</a>
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <!-- BLENDS -->
+            <div>
+              <div>
+                <h1
+                  class="pt-10 pb-3 text-3xl font-semibold border-b-2 border-black"
+                >
+                  BLENDS
+                </h1>
+              </div>
+              <div class="grid grid-cols-4 gap-2 pt-5">
+                <div class="border">
+                  <img src="../assets/4.jpg" alt="" />
+                  <h1 class="text-center py-2 text-blue-600 italic">
+                    <a href="">ETHIOPIA YIRGACHEFFE</a>
+                  </h1>
+                </div>
+                <div class="border">
+                  <img src="../assets/5.jpg" alt="" />
+                  <h1 class="text-center py-2 text-blue-600 italic">
+                    <a href="">ETHIOPIA YIRGACHEFFE</a>
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <p class="text-xl pt-2">Where can I purchase your coffees?</p>
+            <p class="text-xl pt-4">
+              You can purchase our coffees from all of our
+              <a class="text-blue-700" href="/Pages/cafes.html">cafes</a>
+            </p>
+            <p class="pt-1 text-xl lg:pb-10">
+              We recommend visiting our roastery where you will get the freshest
+              coffee and watch the roasting process as well!
+            </p>
           </div>
         </div>
       </section>
@@ -419,6 +396,5 @@
         </div>
       </section>
     </footer>
-    <script src="JS/index.js"></script>
   </body>
 </html>
