@@ -10,57 +10,80 @@
   </head>
   <body>
     <header>
-      <div class="flex justify-between items-center bg-slate-50 px-48">
-        <div class="flex gap-1 items-center">
-          <a href="/"
-            ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
-          /></a>
-          <a href="/"
-            ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
-          >
-        </div>
-        <div class="flex gap-3 font-semibold text-black">
-          <a href="/Pages/cafes.html">Cafes</a>
-          <a href="/Pages/coffees.html"> Coffees</a>
-          <a href="/Pages/about-us.html">About Us</a>
-          <a href="/Pages/consulting.html">Consulting</a>
-          <a href="/Pages/classes.html">Classes</a>
-          <a href="/Pages/contact.html">Contact</a>
-          <a href="">FAQ</a>
+      <!-- big device -->
+      <div>
+        <div
+          class="hidden lg:flex justify-between items-center bg-slate-50 px-60"
+        >
+          <div class="flex gap-1 items-center">
+            <a href="/"
+              ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
+            /></a>
+            <a href="/"
+              ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
+            >
+          </div>
+          <div class="flex gap-3 font-semibold text-black">
+            <a href="/Pages/cafes.html">Cafes</a>
+            <a href="/Pages/coffees.html"> Coffees</a>
+            <a href="/Pages/about-us.html">About Us</a>
+            <a href="/Pages/consulting.html">Consulting</a>
+            <a href="/Pages/classes.html">Classes</a>
+            <a href="/Pages/contact.html">Contact</a>
+            <a href="">FAQ</a>
+          </div>
         </div>
       </div>
+      <!-- small device -->
+      <div></div>
     </header>
     <main>
       <section>
-        <div class="banner">
-          <div
-            class="image"
-            style="background-image: url('../assets/aboutUs-cover.jpg')"
-          ></div>
+        <!-- large device -->
+        <div class="hidden lg:flex">
+          <div class="banner">
+            <div
+              class="image"
+              style="background-image: url('../assets/aboutUs-cover.jpg')"
+            ></div>
+          </div>
+        </div>
+        <!-- for small device -->
+        <div class="flex pt-3 lg:pt-0 lg:hidden lg:py-10 w-full">
+          <img class="w-full" src="../assets/aboutUs-cover.jpg" alt="" />
         </div>
       </section>
       <section>
-        <div
-          class="text-content text-white font-normal md:ps-56 pb-10 text-8xl"
-        >
-          ABOUT NORTH END
+        <div>
+          <!-- large screen -->
+          <div
+            class="hidden lg:flex mt-[250px] ps-72 pb-10 text-black lg:text-white font-normal text-8xl"
+          >
+            ABOUT US
+          </div>
+          <!-- small screen -->
+          <div class="flex lg:hidden text-5xl -mt-16 ps-7 text-white">
+            ABOUT US
+          </div>
         </div>
-        <div class="content-2 bg-slate-50">
-          <div class="pt-14 max-w-6xl mx-auto">
-            <h1 class="text-3xl font-semibold border-b-2 border-black pb-4">
+        <div class="mt-5 lg:p-20 lg:mt-20 bg-slate-50">
+          <div class="pt-14 lg:max-w-5xl mx-auto">
+            <h1
+              class="p-3 text-2xl lg:text-3xl font-semibold border-b-2 border-black lg:pb-3"
+            >
               COMPANY PROFILE
             </h1>
-            <p class="text-lg pt-3 text-zinc-600">
-              North End Coffee Roasters is your source for fresh-roasted coffee
-              in Bangladesh. “North End” alludes to both to our location in the
-              North part of Dhaka and our roots in the famous Italian-American
-              “North End” of Boston.
+            <p class="p-3 text-base lg:text-lg text-zinc-600">
+              ROAST & REVELAY Coffee Roasters is your source for fresh-roasted
+              coffee in Bangladesh. “ROAST & REVELAY” alludes to both to our
+              location in the North part of Dhaka and our roots in the famous
+              Italian-American “ROAST & REVELAY” of Boston.
             </p>
-            <p class="text-lg pt-3 pb-20 text-zinc-600">
+            <p class="p-3 text-base lg:text-lg pb-20 text-zinc-600">
               Begun in 2011, we offer both premium quality single-origin coffees
               from around the world and locally-grown blends. Our emphasis is
               quality roasting, drawing from years of experience in the
-              industry. North End also partners with other community
+              industry. ROAST & REVELAY also partners with other community
               organizations in developing coffee and pastry services.
             </p>
           </div>
@@ -71,7 +94,7 @@
       <section>
         <div class="bg-zinc-300 pt-10 pb-14">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 md:max-w-3xl lg:max-w-6xl mx-auto gap-10"
+            class="grid grid-cols-1 lg:grid-cols-6 max-w-4xl lg:max-w-6xl mx-auto gap-10 px-4"
           >
             <!-- 1st col -->
             <div class="text-center">

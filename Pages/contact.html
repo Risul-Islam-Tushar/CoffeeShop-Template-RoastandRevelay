@@ -10,25 +10,32 @@
   </head>
   <body>
     <header>
-      <div class="flex justify-between items-center bg-slate-50 px-48">
-        <div class="flex gap-1 items-center">
-          <a href="/"
-            ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
-          /></a>
-          <a href="/"
-            ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
-          >
-        </div>
-        <div class="flex gap-3 font-semibold text-black">
-          <a href="/Pages/cafes.html">Cafes</a>
-          <a href="/Pages/coffees.html"> Coffees</a>
-          <a href="/Pages/about-us.html">About Us</a>
-          <a href="/Pages/consulting.html">Consulting</a>
-          <a href="/Pages/classes.html">Classes</a>
-          <a href="/Pages/contact.html">Contact</a>
-          <a href="">FAQ</a>
+      <!-- big device -->
+      <div>
+        <div
+          class="hidden lg:flex justify-between items-center bg-slate-50 px-60"
+        >
+          <div class="flex gap-1 items-center">
+            <a href="/"
+              ><img class="h-24 w-auto" src="./assets/LOGO (2).png" alt=""
+            /></a>
+            <a href="/"
+              ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
+            >
+          </div>
+          <div class="flex gap-3 font-semibold text-black">
+            <a href="/Pages/cafes.html">Cafes</a>
+            <a href="/Pages/coffees.html"> Coffees</a>
+            <a href="/Pages/about-us.html">About Us</a>
+            <a href="/Pages/consulting.html">Consulting</a>
+            <a href="/Pages/classes.html">Classes</a>
+            <a href="/Pages/contact.html">Contact</a>
+            <a href="">FAQ</a>
+          </div>
         </div>
       </div>
+      <!-- small device -->
+      <div></div>
     </header>
     <main>
       <div class="max-w-4xl mx-auto text-center mt-20">
@@ -37,7 +44,7 @@
             WE’D LOVE TO HEAR FROM YOU, GET IN TOUCH WITH US!
           </h1>
         </div>
-        <div class="flex justify-evenly pt-10">
+        <div class="flex flex-col lg:flex-row justify-evenly pt-10 m-10 lg:m-0">
           <input
             class="border ps-2 rounded-md"
             type="text"
@@ -46,7 +53,7 @@
             placeholder="Name"
           />
           <input
-            class="border ps-2 rounded-md"
+            class="border ps-2 my-5 lg:my-0 rounded-md"
             type="text"
             name="name"
             id=""
@@ -69,18 +76,18 @@ Message
 </textarea
         ><br />
         <button
-          class="border rounded-lg px-1 bg-cyan-500 text-white"
+          class="border rounded-lg px-1 mb-10 bg-cyan-500 text-white"
           type="submit"
         >
           submit
         </button>
       </div>
     </main>
-    <footer class="mt-16">
+    <footer>
       <section>
         <div class="bg-zinc-300 pt-10 pb-14">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 md:max-w-3xl lg:max-w-6xl mx-auto gap-10"
+            class="grid grid-cols-1 lg:grid-cols-6 max-w-4xl lg:max-w-6xl mx-auto gap-10 px-4"
           >
             <!-- 1st col -->
             <div class="text-center">

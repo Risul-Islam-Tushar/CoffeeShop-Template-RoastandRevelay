@@ -10,57 +10,82 @@
   </head>
   <body>
     <header>
-      <div class="flex justify-between items-center bg-slate-50 px-48">
-        <div class="flex gap-1 items-center">
-          <a href="/"
-            ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
-          /></a>
-          <a href="/"
-            ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
-          >
-        </div>
-        <div class="flex gap-3 font-semibold text-black">
-          <a href="/Pages/cafes.html">Cafes</a>
-          <a href="/Pages/coffees.html"> Coffees</a>
-          <a href="/Pages/about-us.html">About Us</a>
-          <a href="/Pages/consulting.html">Consulting</a>
-          <a href="/Pages/classes.html">Classes</a>
-          <a href="/Pages/contact.html">Contact</a>
-          <a href="">FAQ</a>
+      <!-- big device -->
+      <div>
+        <div
+          class="hidden lg:flex justify-between items-center bg-slate-50 px-60"
+        >
+          <div class="flex gap-1 items-center">
+            <a href="/"
+              ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
+            /></a>
+            <a href="/"
+              ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
+            >
+          </div>
+          <div class="flex gap-3 font-semibold text-black">
+            <a href="/Pages/cafes.html">Cafes</a>
+            <a href="/Pages/coffees.html"> Coffees</a>
+            <a href="/Pages/about-us.html">About Us</a>
+            <a href="/Pages/consulting.html">Consulting</a>
+            <a href="/Pages/classes.html">Classes</a>
+            <a href="/Pages/contact.html">Contact</a>
+            <a href="">FAQ</a>
+          </div>
         </div>
       </div>
+      <!-- small device -->
+      <div></div>
     </header>
     <main>
+      <!-- image section -->
       <section>
-        <div class="banner">
-          <div
-            class="image"
-            style="background-image: url('../assets/classes-cover.jpg')"
-          ></div>
+        <!-- large device -->
+        <div class="hidden lg:flex">
+          <div class="banner">
+            <div
+              class="image"
+              style="background-image: url('../assets/classes-cover.jpg')"
+            ></div>
+          </div>
+        </div>
+        <!-- for small device -->
+        <div class="flex lg:hidden py-10">
+          <img class="w-full" src="../assets/classes-cover.jpg" alt="" />
         </div>
       </section>
       <section>
-        <div
-          class="text-content text-white font-normal md:ps-56 pb-10 text-8xl"
-        >
-          CLASSES
+        <div>
+          <!-- large screen -->
+          <div
+            class="hidden lg:flex mt-[250px] lg:ps-60 pb-10 text-black lg:text-white font-normal text-8xl"
+          >
+            CLASSES
+          </div>
+          <!-- small screen -->
+          <div class="flex lg:hidden text-4xl -mt-28 ps-7 text-white">
+            CLASSES
+          </div>
         </div>
-        <div class="content-2 bg-slate-50">
-          <div class="pt-14 max-w-6xl mx-auto">
+        <div class="mt-10 bg-slate-50">
+          <div class="px-5 lg:pt-14 max-w-6xl mx-auto">
             <p class="text-xl">
               Currently we offer a two day professional Barista class. We will
               be offering more classes again in the future.
             </p>
-            <p class="md:pt-20 ps-4">SIGN UP TO GET OUR LATEST NEWS!</p>
-            <p class="md:pt-5 ps-7 text-2xl text-zinc-400">Email Address*</p>
-            <form class="md:pb-32" action="">
+            <p class="pt-20 ps-4">SIGN UP TO GET OUR LATEST NEWS!</p>
+            <p class="pt-5 ps-7 text-2xl text-zinc-400">Email Address*</p>
+            <form class="pb-32" action="">
               <input
-                class="border w-80 ms-7 mt-4"
+                class="border w-40 lg:w-80 ms-7 mt-4"
                 type="email"
                 name="email"
                 id=""
               />
-              <button class="ms-8 bg-slate-400 rounded-lg px-1" type="submit">
+              <button
+                class="ms-8 bg-slate-400 rounded-lg px-1 mt-4"
+                type="submit"
+              >
                 Subscribe
               </button>
             </form>
@@ -72,7 +97,7 @@
       <section>
         <div class="bg-zinc-300 pt-10 pb-14">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 md:max-w-3xl lg:max-w-6xl mx-auto gap-10"
+            class="grid grid-cols-1 lg:grid-cols-6 max-w-4xl lg:max-w-6xl mx-auto gap-10 px-4"
           >
             <!-- 1st col -->
             <div class="text-center">

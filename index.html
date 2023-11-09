@@ -21,49 +21,76 @@
   </head>
   <body>
     <header>
-      <div class="flex justify-between items-center bg-slate-50 px-32">
-        <div class="flex gap-1 items-center">
-          <a href="/"
-            ><img class="h-24 w-auto" src="./assets/LOGO (2).png" alt=""
-          /></a>
-          <a href="/"
-            ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
-          >
-        </div>
-        <div class="flex gap-3 font-semibold text-black">
-          <a href="/Pages/cafes.html">Cafes</a>
-          <a href="/Pages/coffees.html"> Coffees</a>
-          <a href="/Pages/about-us.html">About Us</a>
-          <a href="/Pages/consulting.html">Consulting</a>
-          <a href="/Pages/classes.html">Classes</a>
-          <a href="/Pages/contact.html">Contact</a>
-          <a href="">FAQ</a>
+      <!-- big device -->
+      <div>
+        <div
+          class="hidden lg:flex justify-between items-center bg-slate-50 px-60"
+        >
+          <div class="flex gap-1 items-center">
+            <a href="/"
+              ><img class="h-24 w-auto" src="./assets/LOGO (2).png" alt=""
+            /></a>
+            <a href="/"
+              ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
+            >
+          </div>
+          <div class="flex gap-3 font-semibold text-black">
+            <a href="/Pages/cafes.html">Cafes</a>
+            <a href="/Pages/coffees.html"> Coffees</a>
+            <a href="/Pages/about-us.html">About Us</a>
+            <a href="/Pages/consulting.html">Consulting</a>
+            <a href="/Pages/classes.html">Classes</a>
+            <a href="/Pages/contact.html">Contact</a>
+            <a href="">FAQ</a>
+          </div>
         </div>
       </div>
+      <!-- small device -->
+      <div></div>
     </header>
 
     <main>
+      <!-- image section -->
       <section>
-        <div class="banner">
-          <div
-            class="image"
-            style="background-image: url('./assets/Banner.jpg')"
-          ></div>
+        <!-- large device -->
+        <div class="hidden lg:flex">
+          <div class="banner">
+            <div
+              class="image"
+              style="background-image: url('./assets/Banner.jpg')"
+            ></div>
+          </div>
         </div>
-        <div class="content bg-slate-50">
-          <a href="">
-            <div class="border h-24 ps-8 bg-zinc-300 flex items-center">
-              <div class="flex items-center gap-4 font-thin">
-                <div class="text-5xl text-gray-400">
-                  <i class="fa-brands fa-instagram"></i>
+        <!-- for small device -->
+        <div class="flex lg:hidden py-10">
+          <img class="w-full" src="./assets/small screen.jpg" alt="" />
+        </div>
+      </section>
+      <!-- link section -->
+      <section>
+        <div>
+          <div class="mt-1 p-3 lg:mt-[650px] lg:p-10 bg-slate-50">
+            <a href="">
+              <div
+                class="border h-24 ps-3 lg:ps-8 bg-zinc-300 flex items-center"
+              >
+                <div class="flex items-center gap-4 font-thin">
+                  <div class="text-5xl text-gray-400">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="text-gray-400 text-xl">
+                    <h1>ROAST & REVELAY</h1>
+                  </div>
                 </div>
-                <div class="text-gray-400 text-xl"><h1>ROAST&REVELAY</h1></div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
+      </section>
 
-        <!--  -->
+      <!--  -->
+      <section>
+        <!-- for big screen -->
         <div>
           <div class="swiper mySwiper md:block bg-slate-50 pb-16">
             <div class="swiper-wrapper">
@@ -200,13 +227,15 @@
             <div class="swiper-button-next"></div>
           </div>
         </div>
+        <!-- for small screen -->
+        <div></div>
       </section>
     </main>
     <footer>
       <section>
         <div class="bg-zinc-300 pt-10 pb-14">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 md:max-w-3xl lg:max-w-6xl mx-auto gap-10"
+            class="grid grid-cols-1 lg:grid-cols-6 max-w-4xl lg:max-w-6xl mx-auto gap-10 px-4"
           >
             <!-- 1st col -->
             <div class="text-center">

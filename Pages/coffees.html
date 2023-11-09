@@ -10,44 +10,66 @@
   </head>
   <body>
     <header>
-      <div class="flex justify-between items-center bg-slate-50 px-48">
-        <div class="flex gap-1 items-center">
-          <a href="/"
-            ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
-          /></a>
-          <a href="/"
-            ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
-          >
-        </div>
-        <div class="flex gap-3 font-semibold text-black">
-          <a href="/Pages/cafes.html">Cafes</a>
-          <a href="/Pages/coffees.html"> Coffees</a>
-          <a href="/Pages/about-us.html">About Us</a>
-          <a href="/Pages/consulting.html">Consulting</a>
-          <a href="/Pages/classes.html">Classes</a>
-          <a href="/Pages/contact.html">Contact</a>
-          <a href="">FAQ</a>
+      <!-- big device -->
+      <div>
+        <div
+          class="hidden lg:flex justify-between items-center bg-slate-50 px-60"
+        >
+          <div class="flex gap-1 items-center">
+            <a href="/"
+              ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
+            /></a>
+            <a href="/"
+              ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
+            >
+          </div>
+          <div class="flex gap-3 font-semibold text-black">
+            <a href="/Pages/cafes.html">Cafes</a>
+            <a href="/Pages/coffees.html"> Coffees</a>
+            <a href="/Pages/about-us.html">About Us</a>
+            <a href="/Pages/consulting.html">Consulting</a>
+            <a href="/Pages/classes.html">Classes</a>
+            <a href="/Pages/contact.html">Contact</a>
+            <a href="">FAQ</a>
+          </div>
         </div>
       </div>
+      <!-- small device -->
+      <div></div>
     </header>
     <main>
+      <!-- image section -->
       <section>
-        <div class="banner">
-          <div
-            class="image"
-            style="background-image: url('../assets/coffee-cover.jpg')"
-          ></div>
+        <!-- large device -->
+        <div class="hidden lg:flex">
+          <div class="banner">
+            <div
+              class="image"
+              style="background-image: url('../assets/coffee-cover.jpg')"
+            ></div>
+          </div>
+        </div>
+        <!-- for small device -->
+        <div class="flex pt-3 lg:pt-0 lg:hidden lg:py-10 w-full">
+          <img class="w-full" src="../assets/coffee-cover.jpg" alt="" />
         </div>
       </section>
       <section>
-        <div
-          class="text-content text-white font-normal md:ps-72 pb-10 text-8xl"
-        >
-          OUR COFFEES
+        <div>
+          <!-- large screen -->
+          <div
+            class="hidden lg:flex mt-[250px] ps-72 pb-10 text-black lg:text-white font-normal text-8xl"
+          >
+            OUR COFFEES
+          </div>
+          <!-- small screen -->
+          <div class="flex lg:hidden text-4xl -mt-16 ps-7 text-white">
+            OUR COFFEES
+          </div>
         </div>
-        <div class="content-2 bg-slate-50">
+        <div class="mt-10 p-3 lg:mt-20 lg:p-20 bg-slate-50">
           <div class="max-w-5xl mx-auto">
-            <h1 class="pt-10 text-xl">
+            <h1 class="pt-3 lg:pt-10 text-xl">
               North End Coffees brings you the highest quality 100% arabica
               coffees from around the world, roasted locally for maximum
               freshness.
@@ -61,7 +83,7 @@
                   WORLD REGION: CENTRAL/SOUTH AMERICA
                 </h1>
               </div>
-              <div class="grid grid-cols-4 gap-2 pt-5">
+              <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 pt-5">
                 <div class="border">
                   <img src="../assets/3.jpg" alt="" />
                   <h1 class="text-center py-2 text-blue-600 italic">
@@ -103,7 +125,7 @@
                   WORLD REGION: ASIA-PACIFIC
                 </h1>
               </div>
-              <div class="grid grid-cols-4 gap-2 pt-5">
+              <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 pt-5">
                 <div class="border">
                   <img src="../assets/4.jpg" alt="" />
                   <h1 class="text-center py-2 text-blue-600 italic">
@@ -133,7 +155,7 @@
                   WORLD REGION: AFRICA
                 </h1>
               </div>
-              <div class="grid grid-cols-4 gap-2 pt-5">
+              <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 pt-5">
                 <div class="border">
                   <img src="../assets/6.jpg" alt="" />
                   <h1 class="text-center py-2 text-blue-600 italic">
@@ -151,7 +173,7 @@
                   BLENDS
                 </h1>
               </div>
-              <div class="grid grid-cols-4 gap-2 pt-5">
+              <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 pt-5">
                 <div class="border">
                   <img src="../assets/4.jpg" alt="" />
                   <h1 class="text-center py-2 text-blue-600 italic">

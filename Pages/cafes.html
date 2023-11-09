@@ -10,45 +10,67 @@
   </head>
   <body>
     <header>
-      <div class="flex justify-between items-center bg-slate-50 px-48">
-        <div class="flex gap-1 items-center">
-          <a href="/"
-            ><img class="h-24 w-auto" src="/assets/LOGO (2).png" alt=""
-          /></a>
-          <a href="/"
-            ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
-          >
-        </div>
-        <div class="flex gap-3 font-semibold text-black">
-          <a href="/Pages/cafes.html">Cafes</a>
-          <a href="/Pages/coffees.html"> Coffees</a>
-          <a href="/Pages/about-us.html">About Us</a>
-          <a href="/Pages/consulting.html">Consulting</a>
-          <a href="/Pages/classes.html">Classes</a>
-          <a href="/Pages/contact.html">Contact</a>
-          <a href="">FAQ</a>
+      <!-- big device -->
+      <div>
+        <div
+          class="hidden lg:flex justify-between items-center bg-slate-50 px-60"
+        >
+          <div class="flex gap-1 items-center">
+            <a href="/"
+              ><img class="h-24 w-auto" src="../assets/LOGO (2).png" alt=""
+            /></a>
+            <a href="/"
+              ><h1 class="font-bold text-3xl text-black">ROAST & REVELAY</h1></a
+            >
+          </div>
+          <div class="flex gap-3 font-semibold text-black">
+            <a href="/Pages/cafes.html">Cafes</a>
+            <a href="/Pages/coffees.html"> Coffees</a>
+            <a href="/Pages/about-us.html">About Us</a>
+            <a href="/Pages/consulting.html">Consulting</a>
+            <a href="/Pages/classes.html">Classes</a>
+            <a href="/Pages/contact.html">Contact</a>
+            <a href="">FAQ</a>
+          </div>
         </div>
       </div>
+      <!-- small device -->
+      <div></div>
     </header>
     <main>
+      <!-- image section -->
       <section>
-        <div class="banner">
-          <div
-            class="image"
-            style="background-image: url('../assets/cafes.jpg')"
-          ></div>
+        <!-- large device -->
+        <div class="hidden lg:flex">
+          <div class="banner">
+            <div
+              class="image"
+              style="background-image: url('../assets/cafes.jpg')"
+            ></div>
+          </div>
+        </div>
+        <!-- for small device -->
+        <div class="flex pt-3 lg:pt-0 lg:hidden lg:py-10 w-full">
+          <img class="w-full" src="../assets/cafes.jpg" alt="" />
         </div>
       </section>
       <section>
-        <div
-          class="text-content text-white font-normal md:ps-72 pb-10 text-8xl"
-        >
-          CAFES
+        <div>
+          <!-- large screen -->
+          <div
+            class="hidden lg:flex mt-[250px] ps-72 pb-10 text-black lg:text-white font-normal text-8xl"
+          >
+            CAFES
+          </div>
+          <!-- small screen -->
+          <div class="flex lg:hidden text-5xl -mt-16 ps-7 text-white">CAFE</div>
         </div>
-        <div class="content-2 bg-slate-50">
+        <div class="mt-10 p-3 lg:mt-20 lg:p-20 bg-slate-50">
           <!-- 1st section -->
-          <div class="flex flex-col md:flex-row max-w-5xl gap-10 mx-auto">
-            <div class="bg-gray-200 w-[500px]">
+          <div
+            class="flex flex-col lg:flex-row lg:max-w-5xl gap-2 lg:gap-10 mx-auto"
+          >
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 ps-3 font-semibold">
                 CAFÉ, ROASTERY, AND BAKERY
               </h1>
@@ -64,7 +86,7 @@
                 Sun-Thu: 07:30am-09:30pm | Fri-Sat: 07:30am – 10:00pm
               </p>
             </div>
-            <div class="bg-gray-200 w-[500px]">
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">
                 ROAST & REVELAY AT BANANI
               </h1>
@@ -82,8 +104,10 @@
             </div>
           </div>
           <!-- 2nd section -->
-          <div class="flex flex-col md:flex-row max-w-5xl gap-10 mx-auto mt-10">
-            <div class="bg-gray-200 w-[500px]">
+          <div
+            class="flex flex-col lg:flex-row lg:max-w-5xl gap-2 lg:gap-10 mx-auto pt-2"
+          >
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">R&R AT DHANMONDI</h1>
               <br />
               <p class="ps-3 pe-8 pt-2 text-lg">
@@ -95,7 +119,7 @@
               <h1 class="ps-3 font-semibold">Open Hours:</h1>
               <p class="ps-3 pe-2 pb-10 text-lg">Sun-Sat: 07:30am – 10:30pm</p>
             </div>
-            <div class="bg-gray-200 w-[500px]">
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">
                 ROAST & REVELAY AT BANANI
               </h1>
@@ -113,8 +137,10 @@
             </div>
           </div>
           <!-- 3rd section -->
-          <div class="flex flex-col md:flex-row max-w-5xl gap-10 mx-auto mt-10">
-            <div class="bg-gray-200 w-[500px]">
+          <div
+            class="flex flex-col lg:flex-row lg:max-w-5xl gap-2 lg:gap-10 mx-auto pt-2"
+          >
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">
                 ROAST & REVELAY AT CITYSCAPE
               </h1>
@@ -128,7 +154,7 @@
                 Sun-Thu: 7:00am-10:30pm | Fri-Sat: 7:00am – 11:00pm
               </p>
             </div>
-            <div class="bg-gray-200 w-[500px]">
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">
                 ROAST & REVELAY AT LK TOWER 2
               </h1>
@@ -142,8 +168,10 @@
             </div>
           </div>
           <!-- 4th section -->
-          <div class="flex flex-col md:flex-row max-w-5xl gap-10 mx-auto mt-10">
-            <div class="bg-gray-200 w-[500px]">
+          <div
+            class="flex flex-col lg:flex-row lg:max-w-5xl gap-2 lg:gap-10 mx-auto pt-2"
+          >
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">
                 ROAST & REVELAY AT EVERCARE
               </h1>
@@ -157,7 +185,7 @@
                 Sun-Thu: 7:00am-10:30pm | Fri-Sat: 7:00am – 11:00pm
               </p>
             </div>
-            <div class="bg-gray-200 w-[500px]">
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">
                 ROAST & REVELAY AT AIS/D
               </h1>
@@ -172,9 +200,9 @@
           </div>
           <!-- 5th section -->
           <div
-            class="flex flex-col md:flex-row max-w-5xl gap-10 mx-auto mt-10 pb-10"
+            class="flex flex-col lg:flex-row lg:max-w-5xl gap-2 lg:gap-10 mx-auto pt-2"
           >
-            <div class="bg-gray-200 w-[500px]">
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">
                 ROAST & REVELAY AT UKHIA
               </h1>
@@ -188,7 +216,7 @@
                 Sun-Thu: 7:00am-10:30pm | Fri-Sat: 7:00am – 11:00pm
               </p>
             </div>
-            <div class="bg-gray-200 w-[500px]">
+            <div class="bg-gray-200 lg:w-[500px]">
               <h1 class="text-3xl pt-7 font-semibold ps-3">
                 ROAST & REVELAY AT CONCORD
               </h1>
@@ -208,7 +236,7 @@
       <section>
         <div class="bg-zinc-300 pt-10 pb-14">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 md:max-w-3xl lg:max-w-6xl mx-auto gap-10"
+            class="grid grid-cols-1 lg:grid-cols-6 max-w-4xl lg:max-w-6xl mx-auto gap-10 px-4"
           >
             <!-- 1st col -->
             <div class="text-center">
