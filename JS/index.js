@@ -9,3 +9,9 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+$("#dropdown").hide();
+$("#btn_s").click(function (event) {
+  event.stopPropagation();
+  $("#dropdown").slideToggle("slow");
+});

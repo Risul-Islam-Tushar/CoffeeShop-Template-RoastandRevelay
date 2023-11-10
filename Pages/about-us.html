@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/index.css" />
   </head>
@@ -35,7 +37,70 @@
         </div>
       </div>
       <!-- small device -->
-      <div></div>
+      <div>
+        <div
+          class="flex lg:hidden justify-evenly items-center text-xl max-w-3xl"
+        >
+          <div class="flex gap-1 items-center">
+            <a href="/"
+              ><img class="h-14 w-auto" src="../assets/LOGO (2).png" alt=""
+            /></a>
+            <a href="/"
+              ><h1 class="font-semibold text-lg text-black">
+                ROAST & REVELAY
+              </h1></a
+            >
+          </div>
+          <div id="btn_s">
+            <div class="ml-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#273B76"
+                  d="M64 144a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM64 464a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48-208a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- items -->
+        <div
+          class="w-full flex justify-center items-start flex-col text-xl font-light"
+          id="dropdown"
+        >
+          <div class="lg:hidden py-2">
+            <hr class="w-[300px]" />
+            <a href="/Pages/cafes.html">Cafes</a>
+          </div>
+          <div class="lg:hidden block py-2">
+            <hr class="w-[300px]" />
+            <a href="/Pages/coffees.html"> Coffees</a>
+          </div>
+          <div class="lg:hidden block py-2">
+            <hr class="w-[300px]" />
+            <a href="/Pages/about-us.html">About Us</a>
+          </div>
+          <div class="lg:hidden block py-2">
+            <hr class="w-[300px]" />
+            <a href="/Pages/consulting.html">Consulting</a>
+          </div>
+
+          <div class="lg:hidden block py-2">
+            <hr class="w-[300px]" />
+            <a href="/Pages/classes.html">Classes</a>
+          </div>
+          <div class="lg:hidden block py-2">
+            <hr class="w-[300px]" />
+            <a href="/Pages/contact.html">Contact</a>
+          </div>
+          <div>
+            <hr class="w-[300px]" />
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section>
@@ -306,5 +371,6 @@
         </div>
       </section>
     </footer>
+    <script src="../JS/dropdown.js"></script>
   </body>
 </html>
