@@ -5,7 +5,7 @@
 - CSS
 - Tailwind CSS
 - Java Script
-- JQuary
+- JQuery
 
 ## Features
 
